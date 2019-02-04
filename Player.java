@@ -7,7 +7,7 @@ public class Player {
   private int health;
   
   // this is called a "constructor". It is automatically called when someone creates a new Player object
-  public void Player() {
+   Player() {
     this.health = 100;
   }
   
@@ -31,5 +31,18 @@ public class Player {
   
   // here is where you should insert your setHealth and getHealth methods
   // what are some conditions that need to be checked?
+    public void setHealth(int playerHealth) {
+    this.health = playerHealth;
+  }
+  
+  if (playerHealth.length() < 0 {
+    this.health = "dead";
+    return;
+  }
+  
+  public int getHealth(){
+    return this.health;
+  }
+  
   
 }
