@@ -31,16 +31,13 @@ public class Player {
   
   // here is where you should insert your setHealth and getHealth methods
   // what are some conditions that need to be checked?
-    public int setHealth(int playerHealth) {
-    this.health = playerHealth;
-  }
+    public void setHealth(int playerHealth) {
   
-  if (playerHealth.length() < 1 {
-    this.health = "dead";
-    return;
+  this.health = playerHealth;
   }
-  
-  public int getHealth(){
+      
+      
+  public int getHealth() {
     return this.health;
   }
   
