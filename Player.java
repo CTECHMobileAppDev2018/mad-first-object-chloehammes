@@ -35,7 +35,7 @@ public class Player {
     this.health = playerHealth;
   }
   
-  if (playerHealth.length() < 0 {
+  if (playerHealth.length() < 1 {
     this.health = "dead";
     return;
   }
