@@ -29,5 +29,12 @@ public class Weapons {
   //Set and get the weapon damage
   public int setDamage(int weaponDamage) {
     
+   // Weapon breaks after going under value of 1
+  if (weaponDamage.length() < 1 {
+    this.damage = "broken";
+    return;
+  }
+      
+    
     
     
