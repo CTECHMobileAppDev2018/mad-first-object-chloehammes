@@ -1,11 +1,11 @@
-public class Weapons {
+public class Weapon {
   
   private String weaponName;
   private int weaponDamage;
   private int weaponAmmo;
   
   //Automatically set new weapons with 35 bullets
-  Weapons() {
+  Weapon() {
     this.weaponAmmo = 35;
   }
   
@@ -14,27 +14,37 @@ public class Weapons {
 
     // Making sure the name is always longer than zero
     if (weaponName.length() < 1) {
-      this.name = "invalid";
+      this.weaponName = "invalid";
       return;
     }
     
-    this.name = weaponName;
+    this.weaponName = weaponName;
   }
   
   // this just gets the name 
   public String getName() {
-    return this.name;
+    return this.weaponName;
   }
   
   //Set and get the weapon damage
-  public int setDamage(int weaponDamage) {
+  public void setDamage(int weaponDamage) {
     
-   // Weapon breaks after going under value of 1
-  if (weaponDamage.length() < 1 {
-    this.damage = "broken";
-    return;
+    this.weaponDamage = weaponDamage;
   }
       
+   public int getDamage() {
+     return this.weaponDamage;
+   }
     
+   public void setAmmo(int weaponAmmo) {
+     this.weaponAmmo = weaponAmmo;
+   }
+     public int getAmmo() {
+       return this.weaponAmmo;
+     }
+}
+    
+      
+      
     
     
