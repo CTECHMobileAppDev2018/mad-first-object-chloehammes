@@ -9,7 +9,13 @@ public class StartGame {
     System.out.println("Player1 name is: " + player1.getName());
     
     Player player2 = new Player();
-    player2.setName("Mr. Barstool");
+    import java.util.Scanner;
+
+    Scanner reader = new Scanner(System.in);  // Reading from System.in
+    System.out.println("Enter a name: ");
+    String player2 = reader.nextString(); // Scans the next token of the input as a string.
+    //once finished
+    reader.close();
     
     System.out.println("Player2 name is: " + player2.getName());
     
