@@ -9,6 +9,7 @@ public class PlayerList {
     
     playerArray[0] = player0;
     
+    //As long as i is less than 5 it will print the players from player0 to player4
     for (int i =0; i< playerArray.length; i++) {
       if (playerArray[i] != null) {
         System.out,println("Player" + i + " name is: " + playerArray[i].getName());
